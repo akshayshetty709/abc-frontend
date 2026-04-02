@@ -18,6 +18,7 @@ pipeline {
 
         stage('Install & Build') {
             steps {
+                echo "installing"
                 sh '''
                 npm install
                 npm run build
